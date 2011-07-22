@@ -1,0 +1,18 @@
+var myApp = {}
+
+myApp.id = 0;
+
+myApp.next = function() {
+	return myApp.id++;
+}
+
+myApp.reset = function() {
+	myApp.id = 0;
+}
+
+window.console && console.log(
+	myApp.next(),
+	myApp.next(),
+	myApp.reset(),
+	myApp.next()
+); //0, 1, undefined, 0

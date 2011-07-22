@@ -1,0 +1,16 @@
+var myApp = {}
+
+myApp.id = 0;
+
+myApp.next = function() {
+	return this.id++;
+}
+
+myApp.reset = function() {
+	this.id = 0;
+}
+
+myApp.next(); //0
+myApp.next(); //1
+var getNextId = myApp.next;
+getNextId(); //NaN whoops!

@@ -1,0 +1,21 @@
+var myApp = (function() {
+
+	var id= 0;
+
+	return {
+		next: function() {
+			return id++;
+		},
+
+		reset: function() {
+			id = 0;
+		}
+	};
+})();
+
+window.console && console.log(
+	myApp.next(),
+	myApp.next(),
+	myApp.reset(),
+	myApp.next()
+) //0, 1, undefined, 0

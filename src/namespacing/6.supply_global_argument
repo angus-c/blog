@@ -1,0 +1,19 @@
+var myApp = {};
+(function(context) {
+	var id = 0;
+
+	context.next = function() {
+		return id++;
+	};
+
+	context.reset = function() {
+		id = 0;
+	}
+})(this);
+
+window.console && console.log(
+	next(),
+	next(),
+	reset(),
+	next()
+) //0, 1, undefined, 0
