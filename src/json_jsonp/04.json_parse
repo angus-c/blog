@@ -1,0 +1,12 @@
+function dateReviver(key, value) {
+    if (typeof value === 'string') {
+        var a = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
+        if (a) {
+            return new Date(Date.UTC(+a[1], +a[2] - 1, +a[3]));
+        }
+    }
+    return value;
+};
+
+var myCookies = JSON.parse(cookieJSON, dateReviver);
+myCookies.cookies.oatmeal.eatBy; //Sat Dec 04 2010 16:00:00 GMT-0800 (Pacific Standard Time)

@@ -1,0 +1,26 @@
+{
+    "cookies": {
+        "oatmeal": {
+            "ingredients": [
+                "flour",
+                "sugar",
+                "oats",
+                "butter"
+            ],
+            "calories": 430,
+            "eatBy": "2010-12-05",
+            "kosher": true
+        },
+        "chocolate": {
+            "ingredients": [
+                "flour",
+                "sugar",
+                "butter",
+                "chocolate"
+            ],
+            "calories": 510,
+            "eatBy": "2010-12-03",
+            "kosher": true
+        }
+    }
+}

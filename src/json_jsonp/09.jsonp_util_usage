@@ -1,0 +1,15 @@
+//The U.S. President's latest tweet...
+var obamaTweets = "http://www.twitter.com/status/user_timeline/BARACKOBAMA.json?count=5&callback=JSONPCallback";
+jsonp.fetch(obamaTweets, function(data) {console.log(data[0].text)});
+
+/* console logs:
+From the Obama family to yours, have a very happy Thanksgiving. http://OFA.BO/W2KMjJ
+*/
+
+//The latest reddit...
+var reddits = "http://www.reddit.com/.json?limit=1&jsonp=JSONPCallback";
+jsonp.fetch(reddits , function(data) {console.log(data.data.children[0].data.title)});
+
+/* console logs:
+You may remember my kitten Swarley wearing a tie. Well, he's all grown up now, but he's still all business. (imgur.com)
+*/

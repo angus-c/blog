@@ -1,0 +1,13 @@
+JSON.stringify(cookies, ['cookies','oatmeal','chocolate','calories'], '\t')
+/*
+'{
+    "cookies":{
+        "oatmeal":{
+            "calories":430
+        },
+        "chocolate":{
+            "calories":510
+        }
+    }
+}'
+*/

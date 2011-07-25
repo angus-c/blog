@@ -1,0 +1,4 @@
+var scriptTag = document.createElement('SCRIPT');
+scriptTag.src = "http://www.twitter.com/status/user_timeline/angustweets.json?count=5";
+
+document.getElementsByTagName('HEAD')[0].appendChild(scriptTag);

@@ -1,0 +1,11 @@
+var logIt = function(data) {
+	//print last tweet text
+    window.console && console.log(data[0].text);
+}
+
+var scriptTag = document.createElement('SCRIPT');
+scriptTag.src = "http://www.twitter.com/status/user_timeline/angustweets.json?count=5&callback=logIt";
+
+document.getElementsByTagName('HEAD')[0].appendChild(scriptTag);
+/* console will log:
+@marijnjh actually I like his paren-free proposal (but replacing global w/ modules seems iffy) JS needs to re-assert simplicity as an asset */

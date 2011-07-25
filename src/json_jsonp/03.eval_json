@@ -1,0 +1,2 @@
+var myCookies = eval('(' + cookieJSON + ')');
+myCookies.cookies.chocolate.ingredients[1]; //"sugar"

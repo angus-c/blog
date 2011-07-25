@@ -1,0 +1,20 @@
+<cookies>
+    <oatmeal>
+         <ingredients>flour</ingredients>
+         <ingredients>sugar</ingredients>
+         <ingredients>oats</ingredients>
+         <ingredients>butter</ingredients>
+         <calories>430</calories>
+         <eatBy>2010-12-05</eatBy>
+         <kosher>true</kosher>
+    </oatmeal>
+    <chocolate>
+         <ingredients>flour</ingredients>
+         <ingredients>sugar</ingredients>
+         <ingredients>butter</ingredients>
+         <ingredients>chocolate</ingredients>
+         <calories>510</calories>
+         <eatBy>2010-12-03</eatBy>
+         <kosher>true</kosher>
+    </chocolate>
+</cookies>
